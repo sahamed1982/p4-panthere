@@ -510,13 +510,18 @@ button {
     box-shadow: none;
 }
 
+label {
+    font-size: 16px;
+    font-weight: 100;
+}
+
 .scrollToTop {
     width: 40px;
     height: 40px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -534,6 +539,8 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -651,7 +658,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -677,7 +684,12 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 19px;
+}
+
+figcaption{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .tight-width-whitespace {
@@ -704,16 +716,49 @@ p {
     margin: auto auto auto auto;
 }
 
+
+
+.fa-dribbble,
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+    color: black!important;
+    padding-top: 35px;
+}
+ 
+
+.fa-dribbble:hover,
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+    background-color: rgba(0, 0, 0,0.5);
+    border-radius: 5px;
+    color: white!important;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    transition-duration: 0.2s;
+}
+
+.name-link {
+   font-size: 14px;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    color: black!important;
+    font-weight:600;
 }
 
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .med-width-whitespace {
@@ -739,6 +784,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: #000000!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -753,8 +802,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color:rgba(0, 0, 0, 0.5);
     padding: 40px 40px 40px 40px;
+    border-radius: 35px;
 }
 
 .bold-link {
@@ -780,7 +830,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -818,11 +868,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.avif");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.avif");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +898,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
