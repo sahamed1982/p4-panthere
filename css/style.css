@@ -545,6 +545,12 @@ label {
     margin-top: 6px;
 }
 
+.up {
+    padding-left: 15px;
+    font-weight: bold;
+
+}
+
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
